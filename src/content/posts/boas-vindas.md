@@ -21,8 +21,8 @@ Quanto á stack usada aqui:
 
 ## Porquê este blog?
 
-Eu sentia uma alta necessidade de criar um blog que fugisse do comum da Império Network, apesar de lá me sentir feliz a expressar opiniões quanto a jogos, acaba que esse é só o único assunto que tenho por là, e não posso expandir para programação, politica, etc. Como também tenho que ser imparcial por lá.
+Eu sentia uma alta necessidade de criar um blog que fugisse do comum da Império Network, apesar de me sentir feliz a expressar opiniões quanto a jogos, acaba que esse é só o único assunto que tenho, e não posso expandir para programação, politica, etc. Como também tenho que ser imparcial.
 
 ### Dúvidas quanto a política
 
-Talvez você fique assustado quanto a política, mas eu acredito que você vai concordar com os pontos que irei trazer e claro não quero atacar ou desiludir você quanto a qualquer politico, mas sim trazer novas perspectivas, espero que possamos ter discussões respeitosas nesse assunto. Portanto, não tenha medo e dê uma chance aos artigos que serão escritos.
+Talvez você fique assustado quanto a política, mas eu acredito que você vai concordar com os pontos que irei trazer e claro não quero atacar ou desiludir você quanto a qualquer politico, mas sim trazer novas perspetivas, espero que possamos ter discussões respeitosas nesse assunto. Portanto, não tenha medo e dê uma chance aos artigos que serão escritos.
