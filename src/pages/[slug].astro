@@ -8,8 +8,6 @@ import { render } from "astro:content";
 export async function getStaticPaths() {
   const blogEntries = await getCollection("posts");
 
-  console.log(blogEntries);
-
   return blogEntries.map((entry) => ({
     params: { slug: entry.id.replace(".md", "") },
     props: { entry },
