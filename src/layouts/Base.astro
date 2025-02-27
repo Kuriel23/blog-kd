@@ -10,13 +10,13 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/400.css";
 
 const {
-  meta: { title, description = config.description },
+  meta: { title, description = config.description, image = config.image },
 } = Astro.props;
 ---
 
 <html lang={config.lang}>
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} image={image} />
     <ClientRouter />
   </head>
   <body

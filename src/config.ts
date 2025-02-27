@@ -5,6 +5,7 @@ type Config = {
   title: string
   description: string
   lang: string
+  image: string
   themes: {
     dark: ThemeObjectOrShikiThemeName
     light: ThemeObjectOrShikiThemeName
@@ -16,6 +17,7 @@ export default {
   title: 'Kuriel\'s Blog',
   description: 'Blog pessoal de um desenvolvedor simples.',
   lang: 'pt',
+  image: '/logo.png',
   themes: {
     dark: 'github-dark',
     light: 'github-light',

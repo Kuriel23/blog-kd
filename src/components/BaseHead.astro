@@ -4,14 +4,16 @@ import config from '@/config'
 interface Props {
   title?: string
   description?: string
+  image?: string
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
-const { title, description } = Astro.props
+const { title, description, image } = Astro.props
 
 const siteTitle = title ?? config.title
 const siteDescription = description ?? config.description
+const siteImage = image ?? config.image
 ---
 
 <!-- Global Metadata -->
@@ -34,9 +36,11 @@ const siteDescription = description ?? config.description
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={siteTitle} />
 <meta property="og:description" content={siteDescription} />
+<meta property="og:image" content={siteImage} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={siteTitle} />
 <meta property="twitter:description" content={siteDescription} />
+<meta property="twitter:image" content={siteImage} />
