@@ -1,8 +1,9 @@
 ---
-const { title, date, tags } = Astro.props
+const { title, date, tags, image } = Astro.props;
 ---
 
 <div class="mb-5">
+  <img src={image} alt={title} class="w-full rounded-base" />
   <h2 class="my-0 w-max text-4xl">
     {title}
   </h2>

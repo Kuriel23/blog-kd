@@ -3,7 +3,6 @@
 # Blog
 
 Blog is a neobrutalism-styled astro tailwind template for blogs.
-
 ## Get started
 
 [Create a new repo](https://github.com/neobrutalism-templates/blog/generate) from this template.

@@ -1,0 +1,43 @@
+<section class="mx-auto mt-12">
+    <script
+        is:inline
+        src="https://giscus.app/client.js"
+        data-repo="Kuriel23/blog-kd"
+        data-repo-id="R_kgDOOAfeiQ"
+        data-category="General"
+        data-category-id="DIC_kwDOOAfeic4CnZi3"
+        data-mapping="og:title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="pt"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async></script>
+</section>
+
+<script is:inline>
+    function updateGiscusTheme() {
+        const theme = document.documentElement.classList.contains("dark")
+            ? "dark"
+            : "light";
+        const iframe = document.querySelector("iframe.giscus-frame");
+        if (!iframe) return;
+        iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app",
+        );
+    }
+
+    const observer = new MutationObserver(updateGiscusTheme);
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ["class"],
+    });
+
+    window.onload = () => {
+        updateGiscusTheme();
+    };
+</script>

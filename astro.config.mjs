@@ -5,6 +5,8 @@ import expressiveCode from 'astro-expressive-code'
 
 import mdx from '@astrojs/mdx'
 
+import netlify from '@astrojs/netlify';
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -25,5 +27,8 @@ export default defineConfig({
     }),
     mdx(),
   ],
-  site: 'https://neobrutalism-blog.netlify.app/',
+
+  site: 'https://kurielsblog.netlify.app/',
+  output: 'server',
+  adapter: netlify(),
 })

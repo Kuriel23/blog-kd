@@ -1,10 +1,11 @@
 ---
-import '@/global.css'
+import "@/global.css";
 
-import Base from '@/layouts/Base.astro'
-import PostInfo from '@/components/PostInfo.astro'
+import Base from "@/layouts/Base.astro";
+import PostInfo from "@/components/PostInfo.astro";
+import Comments from "@/components/Comments.astro";
 
-const { frontmatter } = Astro.props
+const { frontmatter } = Astro.props;
 ---
 
 <Base meta={{ title: frontmatter.title }}>
@@ -16,15 +17,17 @@ const { frontmatter } = Astro.props
       title={frontmatter.title}
       date={frontmatter.pubDate}
       tags={frontmatter.tags}
+      image={frontmatter.image}
     />
     <slot />
+    <Comments />
   </div>
 </Base>
 
 <style is:global>
   #markdown code:not(pre)::before,
   #markdown code:not(pre)::after {
-    content: '';
+    content: "";
   }
 
   html #markdown code:not(pre code) {

@@ -51,7 +51,7 @@ export default function ThemeSwitcher() {
             d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z"
           ></path>
         </svg>
-        <span className="sr-only">Switch to light / dark version</span>
+        <span className="sr-only">Mudar para modo claro/escuro</span>
       </label>
     </div>
   )
