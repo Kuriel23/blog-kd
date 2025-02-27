@@ -1,4 +1,5 @@
 ---
+export const prerender = true;
 import { getCollection } from "astro:content";
 import type { Post } from "@/content/config";
 
@@ -11,7 +12,7 @@ export async function getStaticPaths() {
   const uniqueTags = [
     ...new Set(allPosts.flatMap((post: Post) => post.data.tags)),
   ];
-
+  
   return uniqueTags.map((tag: string) => {
     const filteredPosts = allPosts.filter((post: Post) =>
       post.data.tags.includes(tag),
