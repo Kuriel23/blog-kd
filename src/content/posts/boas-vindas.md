@@ -1,12 +1,12 @@
 ---
 title: 'Boas-vindas ao meu blog!'
-description: 'Assim começa-se uma jornada nova.'
+description: 'Assim se começa uma jornada nova.'
 pubDate: 'Fev 27 2025'
 tags: ['blog', 'astro', 'neobrutalismo']
 image: 'https://i.ibb.co/xS1mh5sL/a-4k-illustration-of-a-neobrutalist-arch-y-Hx-D4-Vbx-QPi15j8-Zxa-O6gw-Lad-HPh-IPT2iz9-j4-QGr-Igw.jpg'
 ---
 
-E assim começa-se uma jornada nova. Após por vários anos ter trabalhado em fazer a Império Network como um portal de notícias exclusivo para tecnologia ou informação de jogos. Este blog vai retratar alguns assuntos de uma forma mais pessoal, deixando claro as minhas opiniões e até mesmo as minhas dúvidas. Pode esperar assuntos de tudo, seja de programação, jogos, política e até críticas a empresas.
+E assim se começa uma jornada nova. Após, por vários anos ter trabalhado em fazer a Império Network como um portal de notícias exclusivo para tecnologia ou informação de jogos. Este blog vai retratar alguns assuntos de uma forma mais pessoal, deixando claro as minhas opiniões e até mesmo as minhas dúvidas. Pode esperar assuntos de tudo, seja de programação, jogos, política e até críticas a empresas.
 
 É certo que todo o meu trabalho na Império Network não teve sido em vão, e vou continuar fazendo o melhor que eu posso para manter os 2 sites ativos, no entanto é claro que este blog terá uma agenda bem irregular. 
 
