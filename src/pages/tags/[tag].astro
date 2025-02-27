@@ -1,41 +1,43 @@
 ---
-import { getCollection } from 'astro:content'
-import type { Post } from '@/content/config'
+import { getCollection } from "astro:content";
+import type { Post } from "@/content/config";
 
-import Base from '@/layouts/Base.astro'
-import PostPreview from '@/components/PostPreview.astro'
+import Base from "@/layouts/Base.astro";
+import PostPreview from "@/components/PostPreview.astro";
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection('posts')
+  const allPosts = await getCollection("posts");
 
   const uniqueTags = [
-    ...new Set(allPosts.map((post: Post) => post.data.tags).flat()),
-  ]
+    ...new Set(allPosts.flatMap((post: Post) => post.data.tags)),
+  ];
 
   return uniqueTags.map((tag: string) => {
     const filteredPosts = allPosts.filter((post: Post) =>
-      post.data.tags.includes(tag)
-    )
+      post.data.tags.includes(tag),
+    );
     return {
       params: { tag },
       props: { posts: filteredPosts },
-    }
-  })
+    };
+  });
 }
 
-const { tag } = Astro.params
-const { posts }: { posts: Post[] } = Astro.props
+const { tag } = Astro.params;
+const { posts }: { posts: Post[] } = Astro.props;
 ---
 
-<Base meta={{ title: 'Posts categorizados com ' + tag }}>
+<Base meta={{ title: "Posts categorizados com " + tag }}>
   <h2 class="mb-10 text-2xl font-heading tracking-wide w500:text-lg">
-    Posts categorizados com <span class="text-text dark:text-darkText">#{tag}</span>
+    Posts categorizados com <span class="text-text dark:text-darkText"
+      >#{tag}</span
+    >
   </h2>
   <div class="w700:grid-cols-1 grid grid-cols-2 gap-5">
     {
       posts.map((post: Post) => (
         <PostPreview
-          url={'/' + post.slug}
+          url={"/" + post.id.replace(".md", "")}
           title={post.data.title}
           description={post.data.description}
           pubDate={post.data.pubDate}
