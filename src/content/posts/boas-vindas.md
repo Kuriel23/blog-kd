@@ -1,7 +1,7 @@
 ---
 title: 'Boas-vindas ao meu blog!'
 description: 'Assim se começa uma jornada nova.'
-pubDate: 'Fev 27 2025'
+pubDate: 'Feb 27 2025'
 tags: ['blog', 'astro', 'neobrutalismo']
 image: 'https://i.ibb.co/xS1mh5sL/a-4k-illustration-of-a-neobrutalist-arch-y-Hx-D4-Vbx-QPi15j8-Zxa-O6gw-Lad-HPh-IPT2iz9-j4-QGr-Igw.jpg'
 ---
